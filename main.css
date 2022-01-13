@@ -1,0 +1,67 @@
+:root {
+    --green: hsl(145, 100%, 50%);
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: Cambria;
+}
+
+body {
+    background: var(--bg);
+    font-family: Cambria;
+}
+
+ul {
+    font-family: Cambria;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--fuchsia);
+    --fontColor: var(--black);
+    --border: hsl(120, 100%, 50%);
+    --btnBg: var(--blue);
+    --btnFontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus {
+    outline-style: dotted;
+}
+
+.img {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60%;
+}
